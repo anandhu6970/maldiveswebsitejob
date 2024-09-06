@@ -1,0 +1,2040 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- <div class="nav-bar-section container"> -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img src="./img/Logo.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-menu m-0">
+              <li class="navbar-item"><a href="#">Home</a></li>
+              <li class="navbar-item">
+                <a href="#" class="active">Listings</a>
+              </li>
+              <li class="navbar-item"><a href="#">Announcements</a></li>
+              <li class="navbar-item"><a href="#">Tenders</a></li>
+              <li class="navbar-item">
+                <div>
+                  <button class="login-md-btn">Login</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- </div> -->
+      <div class="hero-section w-100 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- Job Listings Title -->
+              <div class="jl-txt">Job Listings</div>
+              <!-- Job Listings Description -->
+              <div class="browse-txt">
+                Browse the latest job openings from verified companies. Use the
+                filters <br />
+                to find jobs that match your skills and preferences.
+              </div>
+              <!-- Search Section -->
+              <div class="custom-padding-set">
+                <div
+                  class="cust-input-parent position-relative d-flex justify-content-between align-items-center"
+                >
+                  <!-- Search Icon -->
+                  <div class="bd-search">
+                    <img src="./img/search-normal.svg" alt="Search Icon" />
+                  </div>
+                  <!-- Search Input Field -->
+                  <div class="input-search">
+                    <input
+                      type="search"
+                      placeholder="Job title or keyword"
+                      class="input-job"
+                    />
+                  </div>
+                  <!-- Radio Buttons for Filters -->
+                  <div class="d-flex align-items-center gap-3 radio-end-sect">
+                    <!-- All Radio Button -->
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="custom-radio">
+                        <input
+                          type="radio"
+                          id="radio1"
+                          name="radioGroup"
+                          class="radio-input"
+                        />
+                        <label for="radio1" class="radio-label"></label>
+                      </div>
+                      <div class="custom-all">All</div>
+                    </div>
+                    <!-- Private Radio Button -->
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="custom-radio">
+                        <input
+                          type="radio"
+                          id="radio2"
+                          name="radioGroup"
+                          class="radio-input"
+                        />
+                        <label for="radio2" class="radio-label"></label>
+                      </div>
+                      <div class="custom-all">Private</div>
+                    </div>
+                    <!-- Government Radio Button -->
+                    <div class="d-flex align-items-center gap-2">
+                      <div class="custom-radio">
+                        <input
+                          type="radio"
+                          id="radio3"
+                          name="radioGroup"
+                          class="radio-input"
+                        />
+                        <label for="radio3" class="radio-label"></label>
+                      </div>
+                      <div class="custom-all">Government</div>
+                    </div>
+                    <!-- Search Button -->
+                    <div class="search-btn">
+                      <button>Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="body-section">
+        <div class="container">
+          <div class="container-sub">
+            <!-- listing pdf section -->
+            <!-- <div class="row main-row-section">
+                    <div class="col-6">
+                        <div class="sub-main-row">
+                            <div class="d-flex ">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./img/Company Logo-UI.svg" alt="">
+                                    <div>
+                                        <div class="role-cmp-txt">
+                                            Sales Assistant-Hulhudhufaaru Fuel Station
+                                        </div>
+                                        <div class="cmp-name-txt">
+                                            The Hawks Private Limited
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="save-opt cp">
+                                    Save
+                                    <span class="ms-1">
+                                        <img src="./img/archive-tick.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+<div class="sector-field-main">
+    <div class="d-flex justify-content-start flex-wrap gap-3">
+        <div class="sector-section">
+            Sector
+            <div class="sect-txt">
+                Government
+            </div>
+        </div>
+        <div class="sector-section">
+            Experience
+            <div class="sect-txt">
+                Entry-level
+            </div>
+        </div>
+        <div class="sector-section">
+            Location
+            <div class="sect-txt">
+                Pennsylvania
+            </div>
+        </div>
+        <div class="sector-section">
+            Industry
+            <div class="sect-txt">
+                Healthcare
+            </div>
+        </div>
+        <div class="sector-section">
+            Vacancy
+            <div class="sect-txt">
+                14
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="sector-section mt-4">
+                            Description
+                        </div>
+                        <div class="description-details">
+                            <ul>
+                                <li>Welcoming patients and attending to their queries in a warm friendly manner</li>
+                                <li>Handling calls, patients and setting appointments in a timely manner.
+                                    Computer literate.</li>
+                                <li>Strong communication skills, both written and verbal ( English 
+                                     and Dhivehi)</li>
+                                <li>Ability to multitask and prioritize tasks in a fast-paced environment</li>
+                            </ul>
+                        </div>
+                        <div class="sector-section mt-3">
+                            Salary
+                            <div class="sect-txt mt-1">
+                                Negotiable
+                            </div>
+                        </div>
+                        <div class="sector-section mt-3">
+                            Submission Deadline
+                            <div class="sect-txt mt-1">
+                                19th July 2024, 12:00 pm
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="preview-section">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="preview-txt">
+                                    Preview
+                                </div>
+                                <div class="d-flex gap-3 align-items-center">
+                                    <img src="./img/book.svg" alt="">
+                                    <img src="./img/maximize-2.svg" alt="">
+                                    <img src="./img/printer.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="preview-section-body">
+                                <div class="container cnt-img">
+                                    <img src="./img/dummy-pdf.svg" alt="">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between pt-3">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="d-flex align-items-center gap-2 filter-blur">
+                                            <img src="./img/fi_arrow-right.svg" alt="">
+                                            <div class="pagination-txt-def">
+                                                Back
+                                            </div>
+                                        </div>
+                                        <div class="line-middle"> </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="./img/fi_arrow-rights.svg" alt="">
+                                            <div class="pagination-txt-def">
+                                                Next
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <div class="save-btn">
+                                            <button>Save</button>
+                                        </div>
+                                        <div class="apply-btn">
+                                            <button>Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- end -->
+            <!-- after filter sort out page -->
+            <div class="row main-filter-container">
+              <div class="col-3">
+                <div class="sticky-top" style="top: 1rem">
+                  <div class="filter-cross-section filter-head">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <!-- Filter Title -->
+                      <div class="filter-txt">Filters</div>
+                      <!-- Clear Button -->
+                      <div class="clear-btn">
+                        <button>
+                          clear
+                          <span
+                            ><img src="./img/close-arrow.svg" alt="Close Icon"
+                          /></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-body">
+                    <!-- listing type -->
+                    <div class="sub-child-listing-type">
+                      <!-- Listing Type Header -->
+                      <div class="listing-type">Listing Type</div>
+                      <!-- Filters List -->
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <!-- Job Filter -->
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-job"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-job" class="txt-label"
+                                >Job</label
+                              >
+                            </div>
+                          </li>
+                          <!-- Tender Filter -->
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-tender"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-tender" class="txt-label"
+                                >Tender</label
+                              >
+                            </div>
+                          </li>
+                          <!-- Announcement Filter -->
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-announcement"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-announcement"
+                                class="txt-label"
+                                >Announcement</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- industry -->
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Industry</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-job"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-job" class="txt-label"
+                                >IT</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-healthcare"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-healthcare" class="txt-label"
+                                >Healthcare</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-finance"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-finance" class="txt-label"
+                                >Finance</label
+                              >
+                            </div>
+                          </li>
+
+                          <input
+                            type="checkbox"
+                            id="toggle-more"
+                            class="toggle-more"
+                          />
+                          <div class="more-items">
+                            <li>
+                              <div
+                                class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                              >
+                                <input
+                                  type="checkbox"
+                                  id="checkbox-education"
+                                  class="custom-checkbox"
+                                />
+                                <label
+                                  for="checkbox-education"
+                                  class="txt-label"
+                                  >Education</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <div
+                                class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                              >
+                                <input
+                                  type="checkbox"
+                                  id="checkbox-marketing"
+                                  class="custom-checkbox"
+                                />
+                                <label
+                                  for="checkbox-marketing"
+                                  class="txt-label"
+                                  >Marketing</label
+                                >
+                              </div>
+                            </li>
+                            <li>
+                              <div
+                                class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                              >
+                                <input
+                                  type="checkbox"
+                                  id="checkbox-sales"
+                                  class="custom-checkbox"
+                                />
+                                <label for="checkbox-sales" class="txt-label"
+                                  >Sales</label
+                                >
+                              </div>
+                            </li>
+                          </div>
+                        </ul>
+                        <!-- Toggle for more/less content -->
+                        <label
+                          for="toggle-more"
+                          class="show-more-label ms-2 cp pt-2"
+                        >
+                          <span class="show-more">
+                            <img
+                              src="./img/open-acc-icon-black.svg"
+                              alt=""
+                              class="arrow-icon me-1"
+                            />
+                            Show 12 More
+                          </span>
+                          <span class="show-less">
+                            <img
+                              src="./img/open-acc-icon-black.svg"
+                              alt=""
+                              class="arrow-icon rotated"
+                            />
+                            Show Less
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- experience -->
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- ux test -->
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-child-listing-type">
+                      <div class="listing-type">Experience</div>
+                      <div class="filters-list-ul">
+                        <ul class="m-0 p-0">
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-entry-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-entry-level"
+                                class="txt-label"
+                                >Entry-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-mid-level"
+                                class="custom-checkbox"
+                              />
+                              <label for="checkbox-mid-level" class="txt-label"
+                                >Mid-level</label
+                              >
+                            </div>
+                          </li>
+                          <li>
+                            <div
+                              class="custom-checkbox-wrapper gap-2 align-items-center d-flex multi-select-wrapper"
+                            >
+                              <input
+                                type="checkbox"
+                                id="checkbox-senior-level"
+                                class="custom-checkbox"
+                              />
+                              <label
+                                for="checkbox-senior-level"
+                                class="txt-label"
+                                >Senior-level</label
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="middle-sort-sector-main">
+                  <div
+                    class="section-card-main sticky-toggle sticky-top"
+                    style="background: #f8f9fa"
+                  >
+                    <div class="sector-card">
+                      <div class="d-flex justify-content-between"">
+                      <div>
+                        <div class="sector-txt">Sector</div>
+                        <div class="d-flex align-items-center gap-3 mt-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="custom-radio">
+                              <input
+                                type="radio"
+                                id="radio1"
+                                name="radioGroup"
+                                class="radio-input"
+                              />
+                              <label for="radio1" class="radio-label"></label>
+                            </div>
+                            <div class="custom-all">All</div>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="custom-radio">
+                              <input
+                                type="radio"
+                                id="radio2"
+                                name="radioGroup"
+                                class="radio-input"
+                              />
+                              <label for="radio2" class="radio-label"></label>
+                            </div>
+                            <div class="custom-all">Private</div>
+                          </div>
+                          <div class="d-flex align-items-center gap-2">
+                            <div class="custom-radio">
+                              <input
+                                type="radio"
+                                id="radio3"
+                                name="radioGroup"
+                                class="radio-input"
+                              />
+                              <label for="radio3" class="radio-label"></label>
+                            </div>
+                            <div class="custom-all">Government</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="sector-txt">Sort by</div>
+                        <div class="dropdown cp mt-2">
+                          <div
+                            class="early-text d-flex align-items-center gap-2"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Earliest First
+                            <img src="./img/open-acc-icon-black.svg" alt="" />
+                          </div>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inform-job">24 jobs found in Government</div>
+                </div>
+                <!-- height default -->
+                <div class="list-card-def-height">
+                  <div class="listing-card-job">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- testing ux -->
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-card-job mt-3">
+                    <div class="d-flex justify-content-between gap-2">
+                      <div class="d-flex gap-3">
+                        <div>
+                          <img src="./img/Company Logo-UI.svg" alt="" />
+                        </div>
+                        <div>
+                          <div class="role-cmp-txt-incard">
+                            Sales Assistant-Hulhudhufaaru Fuel Station
+                          </div>
+                          <div class="cmp-name-txt">
+                            The Hawks Private Limited
+                          </div>
+                          <div
+                            class="d-flex justify-content-start pt-3 gap-4 flex-wrap pb-3"
+                          >
+                            <div class="sector-section">
+                              Sector
+                              <div class="sect-txt">Government</div>
+                            </div>
+                            <div class="sector-section">
+                              Experience
+                              <div class="sect-txt">Entry-level</div>
+                            </div>
+                            <div class="sector-section">
+                              Location
+                              <div class="sect-txt">Pennsylvania</div>
+                            </div>
+                            <div class="sector-section">
+                              Industry
+                              <div class="sect-txt">Healthcare</div>
+                            </div>
+                            <div class="sector-section">
+                              Vacancy
+                              <div class="sect-txt">14</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="save-opt cp">
+                        Save
+                        <span class="ms-1">
+                          <img src="./img/archive-tick.svg" alt="" />
+                        </span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between bd-divder-top">
+                      <div class="d-flex gap-3 align-items-center">
+                        <div
+                          class="save-opt cp clock-txt d-flex align-items-center gap-2"
+                        >
+                          <div>
+                            <img src="./img/clock.svg" alt="" />
+                          </div>
+                          <div>4 Days left</div>
+                        </div>
+                        <div class="posted-txt">Posted 5 Days Ago</div>
+                      </div>
+                      <div class="more-details">
+                        <button
+                          class="d-flex align-items-center justify-content-center gap-2"
+                        >
+                          More Details
+                          <img src="./img/white-next-icon.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav
+                  aria-label="Page navigation example"
+                  class="pagination-under-list mt-3"
+                >
+                  <ul class="pagination d-flex gap-2">
+                    <!-- Previous Page Button -->
+                    <li class="page-item">
+                      <a
+                        class="page-link custom-page-link"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <img src="./img/pagination-side.svg" alt="" />
+                      </a>
+                    </li>
+
+                    <!-- Previous Button -->
+                    <li class="page-item">
+                      <a
+                        class="page-link custom-page-link"
+                        href="#"
+                        aria-label="Previous"
+                      >
+                        <img src="./img/Prev.svg" alt="" />
+                      </a>
+                    </li>
+
+                    <!-- Page Numbers -->
+                    <li class="page-item">
+                      <a class="page-link active" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link def" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link def" href="#">3</a>
+                    </li>
+
+                    <!-- Ellipsis or Additional Pages -->
+                    <li class="page-item">
+                      <a class="page-link dot-cust" href="#">
+                        <img src="./img/Date.svg" alt="" />
+                      </a>
+                    </li>
+
+                    <!-- Additional Page -->
+                    <li class="page-item">
+                      <a class="page-link def" href="#">6</a>
+                    </li>
+
+                    <!-- Next Button -->
+                    <li class="page-item">
+                      <a
+                        class="page-link custom-page-link"
+                        href="#"
+                        aria-label="Next"
+                      >
+                        <img src="./img/Next.svg" alt="" />
+                      </a>
+                    </li>
+
+                    <!-- Last Page Button -->
+                    <li class="page-item">
+                      <a
+                        class="page-link custom-page-link"
+                        href="#"
+                        aria-label="Last"
+                      >
+                        <img src="./img/Last.svg" alt="" />
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-section">
+        <div class="footer-container">
+          <div class="footer-border">
+            <div class="row">
+              <!-- Footer Logo and About Section -->
+              <div class="col-md-4">
+                <div class="footer-about">
+                  <h2 class="footer-logo">
+                    <img src="./img/Logo.svg" alt="Company Logo" />
+                  </h2>
+                  <p class="footer-description">
+                    Your company description or tagline goes here. Helping
+                    people achieve their goals with our services.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Footer Links and Contact Section -->
+              <div class="col-md-8">
+                <div class="row">
+                  <!-- Footer Navigation Links -->
+                  <div class="col-md-3">
+                    <div class="footer-links">
+                      <h3 class="footer-title">Company</h3>
+                      <ul class="footer-nav mt-2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Tenders</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Footer Policies and Help -->
+                  <div class="col-md-3">
+                    <div class="footer-help">
+                      <h3 class="footer-title">Support</h3>
+                      <ul class="footer-nav mt-2">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Footer Contact Info -->
+                  <div class="col-md-3">
+                    <div class="footer-contact">
+                      <h3 class="footer-title">Contact Us</h3>
+                      <div class="d-flex gap-2 align-items-start">
+                        <img src="./img/location.svg" alt="Location Icon" />
+                        <p class="address-txt">
+                          1234 Street Name, City, State, 56789
+                        </p>
+                      </div>
+                      <div class="d-flex gap-2 align-items-start">
+                        <img src="./img/phone-logo.svg" alt="Phone Icon" />
+                        <p class="address-txt">Phone: +123 456 7890</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Footer Social Media -->
+                  <div class="col-md-3">
+                    <div class="footer-social">
+                      <h3 class="footer-title">Follow Us</h3>
+                      <div class="social-icons mt-2 d-flex gap-2">
+                        <a href="#"
+                          ><img src="./img/fb-logo.svg" alt="Facebook"
+                        /></a>
+                        <a href="#"
+                          ><img src="./img/twitter.svg" alt="Twitter"
+                        /></a>
+                        <a href="#"
+                          ><img src="./img/whatsapp-logo.svg" alt="WhatsApp"
+                        /></a>
+                        <a href="#"
+                          ><img src="./img/mess-logo.svg" alt="Instagram"
+                        /></a>
+                        <a href="#"
+                          ><img src="./img/telegram.svg" alt="Telegram"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-line"></div>
+          </div>
+
+          <!-- Footer Copyright -->
+          <div class="row my-3">
+            <div class="col-12 text-center">
+              <div class="copy-right-txt">
+                © 2024 Logoipsum. All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
